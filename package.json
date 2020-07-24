@@ -9,7 +9,10 @@
     "packages/*"
   ],
   "scripts": {
-    "semantic-release": "semantic-release -e semantic-release-monorepo"
+    "postinstall": "lerna bootstrap",
+    "semantic-release": "semantic-release -e semantic-release-monorepo",
+    "build": "lerna run build",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
