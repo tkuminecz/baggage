@@ -59,4 +59,3 @@ export const enhanceApp = (theme: Theme) => (
   };
   return WithMuiJss;
 };
-
