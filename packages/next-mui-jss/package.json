@@ -1,0 +1,29 @@
+{
+  "name": "next-mui-jss",
+  "version": "1.0.0",
+  "description": "Adds support for Material UI's JSS system to Next.js",
+  "main": "dist/index.js",
+  "repository": "https://github.com/tkuminecz/oss",
+  "author": "Tim Kuminecz <tkuminecz@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "lint": "eslint --report-unused-disable-directives --ext=.js,.jsx,.ts,.tsx ./src",
+    "typecheck": "tsc --noEmit",
+    "test": "yarn lint && yarn typecheck"
+  },
+  "devDependencies": {
+    "@material-ui/core": "~4.11.0",
+    "next": "~9.4.4",
+    "react": "~16.13.1",
+    "react-dom": "~16.13.1"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "~4.11.0",
+    "next": "~9.4.4",
+    "react": "~16.13.1",
+    "react-dom": "~16.13.1"
+  }
+}
