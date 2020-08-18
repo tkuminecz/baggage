@@ -1,6 +1,6 @@
 {
   "name": "next-mui-jss",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Adds support for Material UI's JSS system to Next.js",
   "main": "dist/index.js",
   "repository": "https://github.com/tkuminecz/oss",
