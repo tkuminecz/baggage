@@ -1,5 +1,5 @@
 {
-  "name": "next-mui-jss",
+  "name": "@tkuminecz/next-mui-jss",
   "version": "1.0.2",
   "description": "Adds support for Material UI's JSS to Next.js",
   "main": "dist/index.js",
