@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "semantic-release": "semantic-release -e semantic-release-monorepo",
+    "semantic-release": "lerna exec --concurrency 1 -- yarn semantic-release",
     "build": "lerna run build",
     "test": "lerna run test"
   },
@@ -23,6 +23,7 @@
     "@typescript-eslint/eslint-plugin": "~3.7.0",
     "@typescript-eslint/parser": "~3.7.0",
     "babel-plugin-transform-typescript-metadata": "~0.3.0",
+    "conventional-changelog-eslint": "~3.0.8",
     "eslint": "~7.5.0",
     "eslint-config-airbnb-typescript": "~9.0.0",
     "eslint-config-prettier": "~6.11.0",
