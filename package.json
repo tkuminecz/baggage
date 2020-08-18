@@ -1,6 +1,6 @@
 {
   "name": "oss",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "repository": "git@github.com:tkuminecz/oss.git",
   "author": "Tim Kuminecz <tkuminecz@gmail.com>",
   "license": "UNLICENSED",
