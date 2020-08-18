@@ -7,5 +7,6 @@ module.exports = {
         preset: 'eslint',
       },
     ],
+    '@semantic-release/npm',
   ],
 };
