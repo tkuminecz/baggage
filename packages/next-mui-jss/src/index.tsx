@@ -39,7 +39,7 @@ export const enhanceDocument = (
 
 /**
  * HOC that decorates the Next.js App to wrap the application
- * in the Material-UI theme provider
+ * in the Material-UI theme provider.
  */
 export const enhanceApp = (theme: Theme) => (
   Component: React.ComponentType<AppProps>
