@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "name": "next-mui-jss",
+      "path": "./packages/next-mui-jss"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode", // Prettier
+      //  "coenraads.bracket-pair-colorizer-2", // Bracket Pair Colorizer 2
+      "dmitrydorofeev.empty-indent", // Empty Indent
+      "dbaeumer.vscode-eslint", // ESLint
+      "eamodio.gitlens", // GitLens
+      "aaron-bond.better-comments" // Better Comments
+    ]
+  },
+  "settings": {
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "jest.pathToJest": "yarn test",
+    "jest.disabledWorkspaceFolders": ["root"],
+    "files.exclude": {
+      "**/dist": true
+    }
+  }
+}
