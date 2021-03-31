@@ -1,4 +1,5 @@
 const path = require('path');
+const { printWidth } = require('./prettier.config');
 
 module.exports = {
   // So parent files don't get applied
@@ -12,8 +13,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'prettier/react',
+    'prettier',
     'plugin:prettier/recommended',
   ],
   plugins: ['babel', 'import', 'jest', 'react-hooks', 'jsx-a11y'],
@@ -54,7 +54,7 @@ module.exports = {
     'consistent-this': ['error', 'self'],
     'max-len': [
       'error',
-      100,
+      printWidth,
       2,
       {
         ignoreUrls: true,
@@ -64,10 +64,7 @@ module.exports = {
 
     'react/jsx-fragments': ['error', 'syntax'],
     'react/forbid-prop-types': 'off', // airbnb use error
-    'react/jsx-filename-extension': [
-      'error',
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-    ], // airbnb is using .jsx
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }], // airbnb is using .jsx
 
     // Note, export default interface triggers error for ';', see https://github.com/typescript-eslint/typescript-eslint/issues/123
     'no-extra-semi': 'off',
@@ -83,13 +80,10 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off',
-    'react/prefer-stateless-function': [
-      'error',
-      { ignorePureComponents: true },
-    ],
+    'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
     'react/jsx-props-no-spreading': 'off',
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
-    'prettier/prettier': ['error', { singleQuote: true, arrowParens: 'avoid' }],
+    'prettier/prettier': ['error', { singleQuote: true, arrowParens: 'always' }],
     'jsx-a11y/anchor-is-valid': 'off',
     'import/prefer-default-export': 'off',
     'import/no-named-as-default': 'off',
@@ -97,6 +91,6 @@ module.exports = {
     'no-void': 'off',
     'class-methods-use-this': 'off',
     'no-nested-ternary': 'off',
-    'max-classes-per-file': 'off'
+    'max-classes-per-file': 'off',
   },
 };
