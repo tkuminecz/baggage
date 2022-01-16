@@ -1,0 +1,30 @@
+{
+  "name": "@tkuminecz/eslint-config",
+  "version": "1.0.0",
+  "description": "My eslint configurations",
+  "author": "Tim Kuminecz <tkuminecz@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prettier.config.js",
+    "prettier.js",
+    "typescript.js"
+  ],
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives .",
+    "test": "jest --passWithNoTests"
+  },
+  "devDependencies": {
+    "eslint": "~8.7.0",
+    "jest": "~27.4.7"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "~5.9.1",
+    "@typescript-eslint/parser": "~5.9.1",
+    "eslint": "~8.7.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-prettier": "~4.0.0",
+    "typescript": "*"
+  }
+}
