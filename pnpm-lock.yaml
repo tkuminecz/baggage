@@ -36,12 +36,14 @@ importers:
       '@typescript-eslint/parser': ~5.9.1
       eslint: ~8.7.0
       eslint-plugin-jest: ~25.7.0
+      eslint-plugin-prettier: ~4.0.0
       jest: ~27.4.7
     devDependencies:
       '@typescript-eslint/eslint-plugin': 5.9.1_ae48166e4659bacc545c3a6733e081ab
       '@typescript-eslint/parser': 5.9.1_eslint@8.7.0+typescript@4.2.4
       eslint: 8.7.0
       eslint-plugin-jest: 25.7.0_813a2005df60d1ff98fca76f27d1f21e
+      eslint-plugin-prettier: 4.0.0_ca902b17bd6fd20e21156ee412b17b95
       jest: 27.4.7
 
   packages/next-mui-jss:
@@ -1910,6 +1912,23 @@ packages:
       eslint: '>=5.0.0'
       eslint-config-prettier: '*'
       prettier: '>=1.13.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.7.0
+      eslint-config-prettier: 8.3.0_eslint@8.7.0
+      prettier: 2.2.1
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
+  /eslint-plugin-prettier/4.0.0_ca902b17bd6fd20e21156ee412b17b95:
+    resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
     peerDependenciesMeta:
       eslint-config-prettier:
         optional: true
