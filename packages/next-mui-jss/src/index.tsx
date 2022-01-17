@@ -1,26 +1,14 @@
-import React, { useEffect } from "react";
-import { AppProps } from "next/app";
-import {
-  ServerStyleSheets,
-  Theme,
-  ThemeProvider,
-} from "@material-ui/core/styles";
-import Document, {
-  DocumentContext,
-  DocumentInitialProps,
-  DocumentProps,
-} from "next/document";
+import React, { useEffect } from 'react';
+import { AppProps } from 'next/app';
+import { ServerStyleSheets, Theme, ThemeProvider } from '@material-ui/core/styles';
+import Document, { DocumentContext, DocumentInitialProps, DocumentProps } from 'next/document';
 
 /**
  * HOC that decorates the Next.js Document to server-render JSS
  */
-export const enhanceDocument = (
-  OrigDocument: typeof Document
-): React.ComponentType<DocumentProps> => {
+export const enhanceDocument = (OrigDocument: typeof Document): React.ComponentType<DocumentProps> => {
   class MyDocument extends OrigDocument {
-    static async getInitialProps(
-      ctx: DocumentContext
-    ): Promise<DocumentInitialProps> {
+    static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
       const sheets = new ServerStyleSheets();
       const originalRenderPage = ctx.renderPage;
       const renderPage = () =>
@@ -31,10 +19,7 @@ export const enhanceDocument = (
       const initialProps = await OrigDocument.getInitialProps(ctx);
       return {
         ...initialProps,
-        styles: [
-          ...React.Children.toArray(initialProps.styles),
-          sheets.getStyleElement(),
-        ],
+        styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
       };
     }
   }
@@ -45,12 +30,10 @@ export const enhanceDocument = (
  * HOC that decorates the Next.js App to wrap the application
  * in the Material-UI theme provider.
  */
-export const enhanceApp = (theme: Theme) => (
-  Component: React.ComponentType<AppProps>
-): React.FC<AppProps> => {
+export const enhanceApp = (theme: Theme) => (Component: React.ComponentType<AppProps>): React.FC<AppProps> => {
   const WithMuiJss = (props: AppProps) => {
     useEffect(() => {
-      const jssStyles = document.querySelector("#jss-server-side");
+      const jssStyles = document.querySelector('#jss-server-side');
       if (jssStyles && jssStyles.parentElement) {
         jssStyles.parentElement.removeChild(jssStyles);
       }

@@ -6,10 +6,6 @@
   "repository": "https://github.com/tkuminecz/oss",
   "author": "Tim Kuminecz <tkuminecz@gmail.com>",
   "license": "MIT",
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "tsc",
     "prepublish": "yarn build",
@@ -31,5 +27,6 @@
     "next": "~9.4.4",
     "react": "~16.13.1",
     "react-dom": "~16.13.1"
-  }
+  },
+  "prettier": "@tkuminecz/eslint-config/prettier.config"
 }
