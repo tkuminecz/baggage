@@ -5,6 +5,10 @@
       "path": "."
     },
     {
+      "name": "eslint-config",
+      "path": "./packages/eslint-config"
+    },
+    {
       "name": "next-mui-jss",
       "path": "./packages/next-mui-jss"
     }

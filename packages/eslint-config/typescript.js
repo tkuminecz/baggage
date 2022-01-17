@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   overrides: [
@@ -14,4 +14,4 @@ module.exports = {
       },
     },
   ],
-}
+};

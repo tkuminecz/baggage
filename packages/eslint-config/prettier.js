@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   extends: ['plugin:prettier/recommended'],
@@ -8,4 +8,4 @@ module.exports = {
       extends: ['prettier'],
     },
   ],
-}
+};
