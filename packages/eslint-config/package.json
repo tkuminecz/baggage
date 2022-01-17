@@ -1,6 +1,6 @@
 {
   "name": "@tkuminecz/eslint-config",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "My eslint configurations",
   "author": "Tim Kuminecz <tkuminecz@gmail.com>",
   "license": "MIT",
