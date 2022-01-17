@@ -1,5 +1,0 @@
-[35m@tkuminecz/next-mui-jss:lint: [0mcache hit, replaying output [2m1e28a4d7eabfce71[0m
-[35m@tkuminecz/next-mui-jss:lint: [0m
-[35m@tkuminecz/next-mui-jss:lint: [0m> @tkuminecz/next-mui-jss@1.2.1 lint /Users/tim/projects/oss/packages/next-mui-jss
-[35m@tkuminecz/next-mui-jss:lint: [0m> eslint --report-unused-disable-directives --ext=.js,.jsx,.ts,.tsx ./src
-[35m@tkuminecz/next-mui-jss:lint: [0m

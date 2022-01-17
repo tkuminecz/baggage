@@ -1,5 +1,7 @@
 'use strict'
 
+const config = require('./index')
+
 module.exports = {
-  extends: ['@tkuminecz/eslint-config'],
+  ...config,
 }
